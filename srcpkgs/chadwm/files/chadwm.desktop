@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Chadwm
+Comment=Dynamic window manager
+Exec=$HOME/.config/chadwm/scripts/run.sh
+Icon=dwm
+Type=XSession
