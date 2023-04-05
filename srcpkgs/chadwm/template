@@ -13,7 +13,7 @@ checksum=
 do_build() {
 	[ -e ${FILESDIR}/config.h ] && cp ${FILESDIR}/config.h config.h
 	vsed -e "/CFLAGS/s|\${CPPFLAGS}|& $CFLAGS|g" -i config.mk
-	make CC=$CC INCS="-I. -I${XBPS_CROSS_BASE}/usr/include/freetype2" LIBS="-lX11 -lXinerama -lXft -lfontconfig -limlib2"
+	make CC=$CC INCS="-I. -I${XBPS_CROSS_BASE}/usr/include/freetype2" LIBS="-lX11 -lXinerama -lXft -lfontconfig -imlib2"
 }
 
 do_install() {
